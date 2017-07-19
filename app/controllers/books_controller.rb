@@ -1,5 +1,4 @@
 class BooksController < ApplicationController
-  before_action :find_book
 
   def index
 
@@ -9,8 +8,19 @@ class BooksController < ApplicationController
 
   end
 
+  def create
+    @book = Book.new(book_params)
+    @book.save
+
+    redirect_to @book
+  end
+
+  def show
+    @book = Book.find(params[:id])
+  end
+
   private
-    def find_book
-      @book = Book.find(params[:id])
+    def book_params
+      params.require(:book).permit(:title, :author, :category, :description)
     end
 end
