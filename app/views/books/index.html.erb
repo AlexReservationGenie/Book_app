@@ -1,1 +1,12 @@
-<h1>Books Index</h1>
+<div class="word-container">
+  <h1 class="center">Welcome to Book App.</h1>
+  <h2 class="center">Where finding a book has never been easier.</h2>
+</div>
+<% @book.each do |book| %>
+  <div class="book-container center">
+    <h2><%= book.title %></h2>
+    <h6><%= book.author %></h6>
+    <h6><%= book.category %></h6>
+    <p><%= book.description %></p>
+  </div>
+<% end %>

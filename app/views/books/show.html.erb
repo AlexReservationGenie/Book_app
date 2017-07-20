@@ -1,5 +1,6 @@
-<%= @book.title %>
-<%= @book.author %>
-<%= @book.title %>
-<%= @book.description %>
-<p>Submitted <%= time_ago_in_words(@book.created_at) %></p>
+<div class="center-container center">
+  <h2><%= @book.title %></h2>
+  <h4><%= @book.author %></h4>
+  <p><%= @book.description %></p>
+  <p>Submitted <%= time_ago_in_words(@book.created_at) %></p>
+</div>
