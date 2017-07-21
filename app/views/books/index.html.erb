@@ -8,5 +8,9 @@
     <h6><%= book.author %></h6>
     <h6><%= book.category %></h6>
     <p><%= book.description %></p>
+    <%= image_tag book.image.url(:medium) %>
+    <br>
+    <%= link_to "Edit", edit_book_path(book) %> |
+    <%= link_to "Delete", book_path(book), method: :delete, data: {confirm: "Are you sure?"} %>
   </div>
 <% end %>

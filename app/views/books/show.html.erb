@@ -2,5 +2,6 @@
   <h2><%= @book.title %></h2>
   <h4><%= @book.author %></h4>
   <p><%= @book.description %></p>
+  <%= image_tag @book.image.url(:medium) %>
   <p>Submitted <%= time_ago_in_words(@book.created_at) %></p>
 </div>
