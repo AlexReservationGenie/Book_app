@@ -60,6 +60,11 @@ header a {
 .button-container {
   margin-bottom: 25px;
 }
+.button-center {
+  margin-left: 50%;
+  margin-top: 50px;
+  transform: translate(-50%, -50%);
+}
 .center {
   text-align: center;
 }

@@ -3,9 +3,16 @@
     <h4 class="logo"><%= link_to "Book App", root_path %></a></h4>
   </div>
   <div class="heading-list">
-    <a href="#" class="button">Sign Up</a>
+    <% if !user_signed_in? %>
+      <%= link_to "Sign Up", new_user_registration_path, class: "button" %>
+    <% end %>
     <%= link_to "Create", new_book_path %>
     <%= link_to "View", root_path %>
-    <a href="#">Sign In</a>
+    <% if !user_signed_in? %>
+      <%= link_to "Sign In", new_user_session_path, class: "button" %>
+    <% end %>
+    <% if user_signed_in? %>
+      <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+    <% end %>
   </div>
 </header>
