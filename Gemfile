@@ -15,7 +15,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'paperclip', '~> 5.1.0'
-gem 'devise', '~> 4.3'
+gem 'devise'
 
 
 group :development, :test do
