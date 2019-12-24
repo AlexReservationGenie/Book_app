@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
     if current_user
       return if current_user.admin?
     end
-    redirect_to root_path, alert: 'Admins only!'
+    redirect_to root_path, alert: 'Sign in with an Admin account to see this page.'
   end
 end
