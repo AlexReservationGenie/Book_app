@@ -16,6 +16,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem "paperclip", ">= 5.2.0"
 gem 'devise'
+gem "actionview", ">= 5.2.4.2"
+
+
 
 
 group :development, :test do
