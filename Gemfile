@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem "paperclip", ">= 5.2.0"
 gem 'devise'
 gem "actionview", ">= 5.2.4.2"
+gem "sprockets", ">= 3.7.2"
 
 
 
